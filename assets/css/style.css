@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.column-2{
+    width: 50%;
+}
+
+.personal_general{
+    color: #14248A;
+
+}
+
+.title{
+    width: 100%;
+    color: #14248A;
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* MENU */
+
+header{
+    background: #F9F5FF;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.menu_header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.nav_header{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu_list{
+    display: flex;
+}
+
+.menu_list_items{
+    list-style-type: none;
+    padding: 15px 0;
+    margin-right: 5px;
+}
+
+.menu_list_items a{
+    color: #14248A;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.menu_list_items:hover a{
+    border-bottom: 2px solid #14248A;
+}
+
+.information_personal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo_personal{
+    display: flex;
+    justify-content: center;
+}
+
+.name_personal{
+    font-size: 50px;
+}
+
+.photo_personal img{
+    width: 70%;
+}
+
+.life_personal{
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description_personal{
+    display: block;
+    padding: 30px 0;
+}
+
+.welcome{
+    display: block;
+    background: none;
+    width: 40%;
+    margin: 30px 0;
+    padding: 20px;
+    color: #14248A;
+    border: 2px solid #14248A;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: color 1s, background 1s;
+}
+
+.welcome:hover{
+    color: #fff;
+    background: #14248A;
+}
+
+/* MAIN */
+.skills_personal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills_personal_seccion{
+    width: 50%;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-areas:
+    "backend" "fronted"
+    "version";
+}
+
+.skills_personal_seccion:nth-of-type(1){
+    grid-area: backend;
+}
+
+.skills_personal_seccion:nth-of-type(2){
+    grid-area: backend;
+}
+
+.skills_personal_seccion:nth-of-type(3){
+    width: 100%;
+    grid-area: backend;
+}
+
+.items_skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.items_skills img{
+    width: 50%;
+}
+
+.item_skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sub_title{
+    color: #14248ab3;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.secction_fronted{
+    border-left: 2px solid #14248A;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1300px){
+    .header{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        height: 100%;
+    }
+    .name_personal {
+        font-size: 40px;
+    }
+}
